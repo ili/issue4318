@@ -1,0 +1,32 @@
+﻿{
+	"version": "1.0.0-*",
+
+	"dependencies": {
+		"NETStandard.Library": "1.6.0"
+	},
+	"buildOptions": {
+		"copyToOutput": {
+			"mappings": {
+				"Database/": {
+					"include": "../../Data/file1.txt"
+				}
+			}
+		}
+	},
+
+	"frameworks": {
+			"netstandard1.6": {
+				"imports": "dnxcore50",
+				"buildOptions": {
+					"copyToOutput": {
+						"mappings": {
+							"Data/": {
+								"include": [ "../../Data/Data2/file2.txt" ]
+							}
+						}
+					}
+				}
+
+			}
+	}
+}
